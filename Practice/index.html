@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>practice</title>
+        <script src="demo.js"></script>
+    </head>
+    <body>
+        <form onsubmit="return validate()" action="message.html">
+            <input id="uname" placeholder="username" type="text" required>
+            <label id="lbluser" style="color:red; visibility:hiddden;">Invalid</label>
+            <input id="pass" placeholder="password" type="text" required>
+            <button type ="submit" onclick="validate()">submit</button>
+    
+         </form>
+        <form action="message.html">
+            <input id="uname" placeholder="username" type="text"/><br>
+            <label id="lbluser" style="color: red; visibility:visible;">Invalid username</label><br>
+            <button onclick="validate()" type="button">submit</button>
+         </form>
+
+         <button onclick="start()" id="btnadd">start</button>
+         <h2 id="op">some text</h2>
+         <button onclick="stop()" id="btnstop">stop</button>
+    </body>
+</html>

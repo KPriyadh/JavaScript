@@ -1,0 +1,79 @@
+<html>
+    <head>
+    <title>Library Form</title>
+    <script src="demo.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form" id="form">
+        <div class="header">
+            <div class="img">
+            <img class="image" src="photo/SyncfusionLogo.png" width="40px" height="40px">
+            </div>
+            <div class="portal">
+                <p class="para">Library Portal</p><br>
+                <p class="par">Books</p>
+            </div>
+            <br class="clear">
+
+        </div>
+        <div class="content">
+            <h4>Add new Book</h4>
+            <form >
+                <label onsubmit="return showDetails()" style="margin-right:75px;">Category</label>
+                <select id="select" value="it">
+                    <option name="it" id="it" value="IT" >IT</option>
+                    <option name="english" id="english" value="English">English</option>
+                    <option name="history" id="history" value="History">History</option>
+                </select><br><br>
+                <label style="margin-right:90px;">BOOK</label> <input type="text" name="book" id="book" size="30"><label id="booklbl" style="color:red; visibility:hidden;">InValid Book name</label><br><br>
+                <label class="l">Author Email</label><input type="email" name="email" id="email" size="30"><label id="emaillbl" style="color: red; visibility:hidden;"> Invalid EmailID</label><br><br>
+                <label class="l">Author Name</label><input type="text" name="name" id="name" size="30"><label id="namelbl" style="color: red; visibility:hidden;"> Invalid Author Name</label><br><br>
+                <label style="margin-right:75px;">Published</label><input type="text" name="year" id="year" size="30"><label id="yearlbl" style="color: red; visibility:hidden;"> Invalid Year</label><br><br>
+                <label  style="margin-right:100px;">Price</label><input type="text" name="price" id="price" size="30"><label id="pricelbl" style="color: red; visibility:hidden;"> Invalid Price</label><br><br><br>
+                <input id= "button" style="margin-right:30px;" type="button" id="save" value="save">
+                <input id= "button" style="margin-right:30px;" type="button" id="cancel" value="cancel">
+                <input id= "button" onclick="showDetails()" type="button" id="show" value="show">
+                
+            </form>
+            
+
+        </div>
+        <div class="footer">
+            <p >Copyright @2019 - present Syncfusion</p>
+
+        </div>
+    </div>
+    <div class="Showform" id="Showform" style="display:none;">
+        <div class="header">
+            <div class="img">
+            <img class="image" src="photo/SyncfusionLogo.png" width="50px" height="50px">
+            </div>
+            <div class="portal">
+                <p class="para">Library Portal</p><br>
+                <p class="par">Books</p>
+            </div>
+            <br class="clear">
+
+        </div>
+        <div class="content">
+            <h4 id="header1">Book Details</h4>
+            <form>
+                <label style="margin-right:60px;">Category</label>
+                <label><span id="dept">     </span></label><br><br>
+                <label style="margin-right:70px;">BOOK             </label><label><span id="bookname">    </span></label><br><br>
+                <label style="margin-right:30px;">Author Email</label><label><span id="authoremail">    </span></label><br><br>
+                <label style="margin-right:30px;">Author Name</label><label><span id="authorname">   </span></label><br><br>
+                <label style="margin-right:50px;">Published</label><label><span id="published">    </span></label><br><br>
+                <label style="margin-right:80px;">Price</label><label><span id="Price"></span>   </label><br>  <br>                           
+            </form>
+            
+
+        </div>
+        <div class="footer">
+            <p id="copy">Copyright @2019 - present Syncfusion</p>
+
+        </div>
+    </div>
+</body>
+</html>
